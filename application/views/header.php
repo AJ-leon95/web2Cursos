@@ -26,11 +26,9 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="<?php echo site_url() ?>/Instructores/nuevo">home</a>
+                        <a class="nav-link active" aria-current="page" href="<?php echo site_url() ?>/Welcome/index">home</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
-                    </li>
+                    
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             ISNTRUCTORES
@@ -39,6 +37,21 @@
                             <li><a class="dropdown-item" href="<?php echo site_url() ?>/Instructores/index">Listado</a></li>
                             <hr class="dropdown-divider">
                             <li><a class="dropdown-item" href="<?php echo site_url() ?>/Instructores/nuevo">Nuevo</a></li>
+                            <li>
+                            
+                            
+                        </ul>
+                    </li>
+
+                       
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            ESTUDIANTES
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="<?php echo site_url() ?>/Estudiantes/index">Listado</a></li>
+                            <hr class="dropdown-divider">
+                            <li><a class="dropdown-item" href="<?php echo site_url() ?>/Estudiantes/nuevo">Nuevo</a></li>
                             <li>
                             
                             

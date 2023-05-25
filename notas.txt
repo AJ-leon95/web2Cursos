@@ -20,3 +20,14 @@ deber git deber  subir dentro de git lab el deber de restaurantes
 subir dentro de git el proyecto web 2
 
 
+
+
+/////
+el name nos sirve para pasar la datos de la vista al contolado 
+
+
+/// array asociativo 
+
+en ves de los 0 1 2 3  le damos el nombre como queramos ejemplo en ves de poner 0 ponemos cedula 
+se cea yb array asi $datos = array ('cedula'=> $this->input->post('cedula_ins'),
+)
