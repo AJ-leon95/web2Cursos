@@ -7,8 +7,9 @@ class Estudiantes extends CI_Controller{
         $this->load->model('Estudiante');
     }
     public function index(){
+        $data['estudiantes']= $this->Estudiante->obtenerEstudiante();
         $this->load->view('header');
-        $this->load->view('estudiantes/index');
+        $this->load->view('estudiantes/index',$data);
         $this->load->view('footer');
     }
     public function nuevo(){
@@ -29,7 +30,12 @@ class Estudiantes extends CI_Controller{
             "telefono_est" => $this->input->post('telefono_est'),
 
         );
-        $this->Estudiante->insertar_est($datosNuevoEstudiante);
+        //vamos hacer un if 
+        if ($this->Estudiante->insertar_est($datosNuevoEstudiante)) {
+            redirect('estudiantes/index');
+        }else{
+            echo "<h1> Error al insertar datos en la tabla estudantes</h1>";
+        }
 
         
     }

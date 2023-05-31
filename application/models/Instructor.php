@@ -22,7 +22,17 @@ class Instructor extends CI_Model
         return false;
      } //despues vamos al controlador  ala funcion index
 
-
-
+     function borrar($id_ins){
+        $this->db->where("id_ins",$id_ins);///va el nombre de la tabla  en las "" y le pasamos le id
+        //return $this->db->delete("instructor"); //esta linea hace lo mismo que el if  pero en una sola linea aqui le pasamos el nombre de la tabla
+        if ($this->db->delete("instructor")){
+            return true;
+        } else {
+            return false;
+        }
+        
+     }
+   
 
 }//cierre de la clase
+

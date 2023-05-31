@@ -48,6 +48,15 @@ class Instructores extends CI_Controller
             echo "<h1>Error al insertar</h1>"; //caso contrario me mostrara este mensaje 
         }
     }
+    public function Eliminar($id_ins){
+        if ($this->Instructor->borrar($id_ins)) {
+            redirect("Instructores/index");
+        } else {
+            echo "no se pudo borar";
+        }
+        
+
+    }
     
 
 

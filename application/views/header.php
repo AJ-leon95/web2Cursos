@@ -28,7 +28,7 @@
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="<?php echo site_url() ?>/Welcome/index">home</a>
                     </li>
-                    
+
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             ISNTRUCTORES
@@ -38,12 +38,12 @@
                             <hr class="dropdown-divider">
                             <li><a class="dropdown-item" href="<?php echo site_url() ?>/Instructores/nuevo">Nuevo</a></li>
                             <li>
-                            
-                            
+
+
                         </ul>
                     </li>
 
-                       
+
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             ESTUDIANTES
@@ -53,8 +53,8 @@
                             <hr class="dropdown-divider">
                             <li><a class="dropdown-item" href="<?php echo site_url() ?>/Estudiantes/nuevo">Nuevo</a></li>
                             <li>
-                            
-                            
+
+
                         </ul>
                     </li>
                     <li class="nav-item">
