@@ -39,6 +39,15 @@ class Estudiantes extends CI_Controller{
 
         
     }
+    public function Eliminar($id_est){
+        if ($this->Estudiante->borrar($id_est)) {
+            redirect("Estudiantes/index");
+        } else {
+            echo "no se pudo borar";
+        }
+        
+
+    }
 
 
 }
